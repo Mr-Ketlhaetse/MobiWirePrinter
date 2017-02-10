@@ -1,0 +1,20 @@
+{
+  "name": "mobiwireprinter",
+  "version": "0.0.4",
+  "description": "a plugin to access the printing API on a mobiwire POS machine running on android ",
+  "cordova": {
+    "id": "cordova-plugin-mobiwire-print",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Thabo Ketlhaetse",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^3.2.0"
+  }
+}

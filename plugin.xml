@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-mobiwire-print" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>mobiwireprinter</name>
+	<js-module name="mobiwireprinter" src="www/mobiwireprinter.js"><clobbers target="cordova.plugins.mobiwireprinter" /></js-module>
+	<platform name="android">
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="mobiwireprinter">
+				<param name="android-package" value="cordova-plugin-mobiwire-print.mobiwireprinter" />
+			</feature>
+		</config-file>
+		<config-file parent="/*" target="AndroidManifest.xml"></config-file>
+		<source-file src="src/android/mobiwireprinter.java" target-dir="src/cordova-plugin-mobiwire-print/mobiwireprinter" />
+		<source-file src="src/android/com.nbbse.mobiprint3-v0.4.jar" target-dir="src/cordova-plugin-mobiwire-print/mobiwireprinter" />
+	</platform>
+</plugin>
